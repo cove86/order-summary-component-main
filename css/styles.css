@@ -9,9 +9,11 @@ html {
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(../images/pattern-background-desktop.svg);
-  background-size: cover;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center top;
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -19,19 +21,20 @@ body {
   display: flex;
   justify-content: center;
 
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  margin-top: 9.6rem;
+  margin-top: 15rem;
   overflow: hidden;
   width: 35rem;
 
   border-radius: 2rem;
   background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.08);
 }
 
 .card-img {
@@ -49,8 +52,9 @@ body {
 }
 
 .summary-heading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
+  font-weight: 900;
 
   margin-bottom: 2rem;
 }
@@ -124,4 +128,13 @@ body {
   margin-bottom: 2rem;
   font-size: 1.4rem;
   text-decoration: none;
+}
+
+@media (max-width: 23em) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
 }
